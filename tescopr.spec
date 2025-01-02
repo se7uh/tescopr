@@ -1,3 +1,6 @@
+%global commit #COMMIT#
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+
 Name:           tescopr
 Version:        1.0.0
 Release:        1%{?dist}
@@ -5,8 +8,7 @@ Summary:        Program test sederhana
 
 License:        MIT
 URL:            https://github.com/se7uh/tescopr
-
-Source:         main.c
+Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  gcc
 BuildRequires:  make
@@ -17,8 +19,7 @@ BuildRequires:  make
 Program sederhana yang menampilkan nama dan versi.
 
 %prep
-%setup -c -T
-cp %{SOURCE0} .
+%autosetup
 
 %build
 gcc -o %{name} main.c

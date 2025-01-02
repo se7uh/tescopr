@@ -4,5 +4,5 @@ owner: boobaa
 project: test-1
 chroot: fedora-rawhide-x86_64
 
-# Build from spec file
-spec: tescopr.spec 
+# Gunakan rpkg method
+srpm_build_method: rpkg 
