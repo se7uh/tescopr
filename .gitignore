@@ -1,0 +1,28 @@
+# RPM build directories
+BUILD/
+BUILDROOT/
+RPMS/
+SRPMS/
+
+# Source archives
+SOURCES/*.tar.gz
+
+# Compiled files
+*.o
+*.so
+*.a
+tescopr
+
+# Temporary files
+*~
+.*.swp
+.*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db 
