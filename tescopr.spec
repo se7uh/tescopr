@@ -4,20 +4,19 @@ Release:        1%{?dist}
 Summary:        Program test sederhana
 
 License:        MIT
-URL:            http://example.com/%{name}
+URL:            https://github.com/se7uh/tescopr
 Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  gcc
 BuildRequires:  make
 
-# Tambahkan baris ini untuk menonaktifkan debug package
 %global debug_package %{nil}
 
 %description
 Program sederhana yang menampilkan nama dan versi.
 
 %prep
-%setup -q
+%autosetup
 
 %build
 gcc -o %{name} main.c

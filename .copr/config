@@ -1,11 +1,8 @@
 # Configuration for Copr webhook
 fedora-review: false
-owner: boobaa
+owner: USERNAME_COPR_ANDA
 project: tescopr
+chroot: fedora-rawhide-x86_64
 
-# Specify the RPM spec file path
-spec: SPECS/tescopr.spec
-
-# Specify the source files
-sources:
-  - SOURCES/tescopr-1.0.0.tar.gz 
+# Build from spec file
+spec: tescopr.spec 
