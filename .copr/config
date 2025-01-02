@@ -1,0 +1,11 @@
+# Configuration for Copr webhook
+fedora-review: false
+owner: boobaa
+project: tescopr
+
+# Specify the RPM spec file path
+spec: SPECS/tescopr.spec
+
+# Specify the source files
+sources:
+  - SOURCES/tescopr-1.0.0.tar.gz 
