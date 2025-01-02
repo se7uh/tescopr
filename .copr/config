@@ -1,7 +1,7 @@
 # Configuration for Copr webhook
 fedora-review: false
-owner: USERNAME_COPR_ANDA
-project: tescopr
+owner: boobaa
+project: test-1
 chroot: fedora-rawhide-x86_64
 
 # Build from spec file
