@@ -5,7 +5,8 @@ Summary:        Program test sederhana
 
 License:        MIT
 URL:            https://github.com/se7uh/tescopr
-Source0:        %{name}-%{version}.tar.gz
+
+Source:         main.c
 
 BuildRequires:  gcc
 BuildRequires:  make
@@ -16,7 +17,8 @@ BuildRequires:  make
 Program sederhana yang menampilkan nama dan versi.
 
 %prep
-%autosetup
+%setup -c -T
+cp %{SOURCE0} .
 
 %build
 gcc -o %{name} main.c
